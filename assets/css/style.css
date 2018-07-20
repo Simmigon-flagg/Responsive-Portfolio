@@ -1,3 +1,11 @@
+* {
+  /* Box-model */
+  box-sizing: border-box;
+
+  /* Positioning */
+  margin: 0;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
@@ -10,13 +18,7 @@ body {
   background: url("../images/concrete_seamless.png");
 }
 
-* {
-  /* Box-model */
-  box-sizing: border-box;
 
-  /* Positioning */
-  margin: 0;
-}
 
 html,
 body {
@@ -33,7 +35,7 @@ body {
   min-height: 100%;
 
   /* Positioning */
-   margin: 0 auto -600px; 
+   margin: 0 auto -650px; 
 }
 
 .container {
@@ -182,6 +184,8 @@ footer {
 
   /* Positioning */
   clear: both;
+  position: absolute;
+  bottom: 0;
   font-size: 12px;
 
   /* Typography */
@@ -191,6 +195,12 @@ footer {
   /* Visual */
   background: #666;
   border-top: 8px solid #4aaaa5;
+    
+  
+  width: 100%;
+  /* height: 75px; */
+  min-height: 80px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
   
 }
 
@@ -253,15 +263,15 @@ main {
 }
 
 .main-section {
-  float: center;
+  float: top;
   width: 100%;
   max-width: 650px;
 
   /* Box-model */
-  padding: 30px;
+  /* padding: 30px; */
 
   /* Positioning */
-  margin: 0 0 40px;
+  margin: 0 0 40px 0;
   background: #fff;
 
   /* Visual */
@@ -288,12 +298,13 @@ main {
 .work img {
   /* Box-model */
   width: 100%;
+  height: 100%;
 
   /* Visual */
-  border: 0 none;
+  border: 100% none;
 
   /* Misc */
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .work h3 {
@@ -322,7 +333,7 @@ main {
   float: left;
 
   /* Box-model */
-  width: 200px;
+  width: 100%;
   height: auto;
   margin-top: 10px;
 
@@ -384,6 +395,7 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 980px) {
+
 
 }
 
